@@ -2,8 +2,8 @@ import React from "react";
 
 type OnOffPropsType = {
     on: boolean
-    setOn: (on: boolean) => void
-}
+    onChange: (on: boolean) => void
+    }
 
 
 function OnOff(props: OnOffPropsType) {
@@ -39,11 +39,11 @@ function OnOff(props: OnOffPropsType) {
     }
     return <div>
         <div style={onStyle} onClick={() => {
-            props.setOn(true)
+            props.onChange(true)
         }}>On
         </div>
         <div style={offStile} onClick={() => {
-            props.setOn(false)
+            props.onChange(false)
         }}>Off
         </div>
         <div style={indicatorStyle}/>
