@@ -1,12 +1,12 @@
 import React from "react";
 
-type OnOffPropsType = {
+export type OnOffPropsType = {
     on: boolean
     onChange: (on: boolean) => void
     }
 
 
-function OnOff(props: OnOffPropsType) {
+export function OnOff(props: OnOffPropsType) {
 
 
     const onStyle = {
@@ -49,5 +49,3 @@ function OnOff(props: OnOffPropsType) {
         <div style={indicatorStyle}/>
     </div>
 }
-
-export default OnOff;

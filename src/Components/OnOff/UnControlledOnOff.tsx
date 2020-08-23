@@ -54,5 +54,4 @@ function UncontrolledOnOff(props: PropsType) {
         <div style={indicatorStyle}/>
     </div>
 }
-
 export default UncontrolledOnOff;
